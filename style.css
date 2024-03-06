@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#main{
+ margin: 50px 300px;
+ flex-wrap: wrap;
+ border: 1px solid rgb(25, 84, 161);
+ align-items: center;
+}
+
+#form{
+ background-color: rgb(180, 157, 157);
+ width: 100%;
+ height: 100%;
+ font-family: "Poppins", sans-serif;
+ border: 1px solid black;
+}
+
+#Dataform{
+ text-align: center;
+ color:rgb(6, 4, 105);;
+}
+
+.delete{
+ color: blue;
+ font-family: "Poppins", sans-serif;
+}
+
+#conference{
+ margin-bottom: 20px;
+ text-align: center;
+ color: rgb(6, 4, 105);
+}
+#GUEST{
+ margin-bottom: 20px;
+ text-align: center;
+ color:rgb(6, 4, 105);
+}
+#Please{
+margin-bottom: 20x;
+ text-align: center;
+ color:rgb(6, 4, 105) ;
+}
+#submitbutton{
+ padding: 10px 30px;
+ background-color: orangered;
+ color: white;
+ border-radius: 20px;
+ text-align: center;
+ font-family: "Poppins", sans-serif;
+ border: none;
+ transition: .5s;
+ cursor: pointer;
+ margin-left: 60px;
+}
+#submitbutton:hover{
+ transform: scale(1.1);
+}
+#first{
+ padding: 10px 10px 10px 10px;
+ width: 200px;
+ margin-left: 80px;
+ background-color: rgb(154, 154, 240);
+ align-items: center;
+ 
+}
+#last{
+
+ padding: 10px 10px 10px 10px ;
+ width: 200px;
+ margin-left: 10px; 
+
+}
+
+#mail{
+
+ padding: 10px 10px 10px 10px ;
+ margin-left:70px;
+ width: 425px;
+ margin-top: 20px;
+ 
+}
+
+#country{
+ padding: 10px 10px 10px 10px;
+ margin-left: 10px;
+ width: 80px;
+ 
+}
+
+#number{
+ padding: 10px 10px 10px 10px ;
+ width: 340px; 
+ 
+}
+
+#address{
+ padding: 10px 10px 10px 10px ;
+ width: 425px;
+ margin-left: 65px;
+ 
+}
+
+#state{
+ padding: 10px 10px 10px 10px ;
+ width: 170px;
+ 
+}
+
+#street{
+ padding: 10px 10px 10px 10px ;
+ width: 430px;
+ margin-left: 75px;
+
+}
+
+#city{
+ padding: 10px 10px 10px 10px ;
+ width: 150px;
+ margin-left: 95px;
+
+}
+
+#code{
+ padding: 10px 10px 10px 10px ;
+ width: 200px;
+ margin-left:55px ;
+ 
+}
+
+#left{
+ padding-left: 30px;
+ margin: 10px ;
+ margin-bottom: 10px;
+}
+
+#firstlast{
+ display: flex;
+ 
+}
+
+#addressall{
+ display: flex;
+ 
+}
+
+#addresslast{
+ display: flex;
+ 
+}
+#number1{
+ margin-top: 20px; 
+
+}
+#state{
+ margin-left: 20px;
+ 
+}
+#sta{
+ margin-left: 20px;
+ 
+}
+#button{
+ margin-left:200px;
+ justify-content: center;
+ 
+}
+.deletebtn{
+ 
+ background-color: rgb(247, 21, 21);
+
+}
+.label{
+ font-family: "Poppins", sans-serif;
+}
+
+.editbtn{
+background-color: rgb(72, 255, 0);
+}
+.savebtn{
+ background-color: rgb(0, 174, 255);
+}
+#dataformdiv input {
+ border-radius: 5px;
+ margin: 10px 20px;
+}
+
+#dataformdiv button {
+ border-radius: 5px;
+ margin: 10px 20px;
+ cursor: pointer;
+}
+@media screen and (max-width:975px){
+#form{
+flex-wrap: wrap;
+display: flex;
+height: 100%;
+width: 100%;
+}
+#main{
+ margin: 0px;
+
+}
+#firstlast{
+ width: 150px;
+}
+#mail{
+ width: 370px;
+}
+#number{
+ width:286px ;
+}
+#address{
+ width: 373px;
+}
+#street{
+ width: 375px ;
+}
+#city{
+ width:130px ;
+} 
+#state{
+ width:135px ;
+
+}
+#submitbutton{
+margin-right: 100px;
+text-align: center;
+}
+
+#Dataform{
+ visibility: hidden;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
