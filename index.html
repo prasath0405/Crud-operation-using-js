@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./style.css">
+ <title>Document</title>
+ 
+</head>
+<body>
+ 
+
+ <div id="form">
+
+
+  
+  <div id="main">
+    <H1 id="conference"> CRUD OPERATION</H1>
+  <H2 id="GUEST">GUEST INFORMATION</H2>
+  <H3 id="Please">Please book your seat by filling the form below</H3>
+  
+  <div id="left">
+  <div id="firstlast" >
+    <label>Name</label>
+    <input type="text" id="first" placeholder="First name*"> <input type="text"  id="last" placeholder="Last name*">
+   </div>
+   
+   <div>
+     <label>EmailId</label>
+      <input type="email" id="mail" placeholder="EmailId*">
+   </div>
+  
+   <div id="number1">
+   <label>Phone number</label>
+    <Select id="country">
+     <OPtion>+91</OPtion>
+     <OPtion>+851</OPtion>
+     <OPtion>+768</OPtion>
+    </Select>
+    <input type="number" id="number" placeholder="your number">
+   </div>
+   <br>
+   <div id="addressall">
+   <LAbel>Address</LAbel>
+     <input type="text" id="address">
+   </div>
+   <br>
+     <div>
+   <label>Street</label>
+     <input type="text" id="street"> 
+   </div>
+   <br>
+     <div id="addresslast">
+      
+   <label>City</label>
+     <input type="text" id="city">
+     <div id="sat">
+   <label id="sta">State</label>
+      <input type="text" id="state"></div>
+     </div>
+     <br>
+     <div>
+   <label>Zipcode</label>
+      <input type="text" id="code">
+     </Div>
+     <BR></BR> 
+    <div id="button">
+     <button type="submit" id="submitbutton">submit form</button> 
+    </div>
+   </div>
+   
+ </div>
+ 
+   <div id="formdiv">
+
+   <h1 id="Dataform">Data form</h1>
+   </div>
+
+
+</div>
+<script>
+  let first = document.getElementById("first");
+  let last =document.getElementById("last");
+  let mail = document.getElementById("mail");
+  let number = document.getElementById("number");
+  let address=document.getElementById("address");
+  let street = document.getElementById("street");
+  let city = document.getElementById("city");
+  let state = document.getElementById("state");
+  let code = document.getElementById("code");
+  let submitbutton = document.getElementById("submitbutton");
+  let formdiv = document.getElementById("formdiv"); 
+ 
+  button .addEventListener("click",function form(){
+   if (first.value == "" || first.value == undefined || first == null)
+ 
+    {
+     alert("please enter your details")
+    }
+ 
+   else if (number.value == "" || number.value == undefined || number == null)
+ 
+   {
+  alert("please enter your details")
+   }
+  else if  (mail.value == "" || mail.value == undefined || 
+  mail == null)
+ 
+  {
+  alert("please enter your details")
+   }
+  
+     let newdiv = document.createElement("div"); 
+   formdiv.appendChild(newdiv) 
+ 
+  let firstnewinputtag = document.createElement("input");
+  firstnewinputtag.value = first.value;
+  newdiv.appendChild(firstnewinputtag)
+  firstnewinputtag.setAttribute("readonly","readonly")
+  first.value =""; 
+ 
+  let lastnewinputtag = document.createElement("input");
+  lastnewinputtag.value = last.value;
+  newdiv.appendChild(lastnewinputtag)
+  lastnewinputtag.setAttribute("readonly","readonly")
+  last.value ="";
+ 
+  let mailnewinputtag = document.createElement("input");
+  mailnewinputtag.value = mail.value;
+  newdiv.appendChild(mailnewinputtag)
+  mail.value="";
+ 
+  let numbernewinputtag = document.createElement("input");
+  numbernewinputtag.value = number.value;
+  newdiv.appendChild(numbernewinputtag)
+  numbernewinputtag.setAttribute("readonly","readonly")
+  number.value="";
+ 
+  let addressnewinputtag = document.createElement("input");
+  addressnewinputtag.value = address.value;
+  newdiv.appendChild(addressnewinputtag)
+  addressnewinputtag.setAttribute("readonly","readonly")
+  address.value="";
+ 
+  let streetnewinputtag = document.createElement("input");
+  streetnewinputtag.value = street.value;
+  newdiv.appendChild(streetnewinputtag)
+  streetnewinputtag.setAttribute("readonly","readonly")
+  street.value=""; 
+ 
+  let citynewinputtag = document.createElement("input");
+  citynewinputtag.value = city.value;
+  newdiv.appendChild(citynewinputtag)
+  citynewinputtag.setAttribute("readonly","readonly")
+  city.value=""; 
+ 
+  let statenewinputtag = document.createElement("input");
+  statenewinputtag.value = street.value;
+  newdiv.appendChild(statenewinputtag)
+  statenewinputtag.setAttribute("readonly","readonly")
+  state.value=""; 
+ 
+  let codenewinputtag = document.createElement("input");
+  codenewinputtag.value = code.value;
+  newdiv.appendChild(codenewinputtag)
+  codenewinputtag.setAttribute("readonly","readonly")
+  code.value=""; 
+ 
+  
+  let submitbuttonnewinputtag = document.createElement("input");
+  submitbuttonnewinputtag.value = submitbutton.value;
+  newdiv.appendChild(submitbuttonnewinputtag)
+  submitbuttonnewinputtag.setAttribute("readonly","readonly")
+  submitbutton.value=""; 
+ 
+  
+ 
+  let deletebutton = document.createElement("Button");
+  deletebutton.innerHTML ="Delete";
+  newdiv.appendChild(deletebutton);
+ deletebutton.classList.add("deletebtn")
+  deletebutton.addEventListener("click",()=>{
+ newdiv.style.display ="none";
+  })
+  let editbutton = document.createElement("Button");
+  editbutton.innerHTML ="Edit";
+  newdiv.appendChild(editbutton);
+  editbutton.classList.add("editbtn")
+  editbutton.addEventListener("click",()=>{
+   firstnewinputtag.removeAttribute("readonly","readonly");
+   lastnewinputtag.removeAttribute("readonly","readonly");
+   numbernewinputtag.removeAttribute("readonly","readonly");
+   emailnewinputtag.removeAttribute("readonly","readonly");
+   addressnewinputtag.removeAttribute("readonly","readonly");
+   streetnewinputtag.removeAttribute("readonly","readonly");
+   statenewinputtag.removeAttribute("readonly","readonly");
+   citynewinputtag.removeAttribute("readonly","readonly");
+   codenewinputtag.removeAttribute("readonly","readonly")
+
+
+  });
+ 
+ let savebutton =document.createElement("Button");
+ savebutton.innerHTML="Save";
+ newdiv.appendChild(savebutton);
+ savebutton.classList.add("savebtn")
+ 
+ savebutton.addEventListener("click",()=>{
+  alert("You Have Saved")
+  firstnewinputtag.removeAttribute("readonly","readonly");
+   lastnewinputtag.removeAttribute("readonly","readonly");
+   numbernewinputtag.removeAttribute("readonly","readonly");
+   emailnewinputtag.removeAttribute("readonly","readonly");
+   addressnewinputtag.removeAttribute("readonly","readonly");
+   streetnewinputtag.removeAttribute("readonly","readonly");
+   statenewinputtag.removeAttribute("readonly","readonly");
+   citynewinputtag.removeAttribute("readonly","readonly");
+   codenewinputtag.removeAttribute("readonly","readonly")
+ });
+ 
+ 
+   }
+ 
+   
+  )
+ </script>
+</body>
+</html>
+
